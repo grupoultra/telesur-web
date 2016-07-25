@@ -1,6 +1,63 @@
 .section
+  &:nth-child(2n)
+    background-color: $grey_3
+  &:nth-child(2n+1)
+    background-color: #FFF
+  padding: 10px
   min-height: 300px
-.section:nth-child(2n)
-  background-color: $grey_3
-.section:nth-child(2n+1)
-  background-color: #FFF
+  white-space: nowrap
+  .header
+    margin-bottom: 5px
+    .pull-left
+      h2
+        color: $grey_8
+        display: inline-block
+        margin: 0 15px 0 0
+        padding: 0
+        font-family: "Fira Sans", sans-serif
+        font-size: 22px
+    .pull-right
+      font-size: 12px
+  .section-item
+    white-space: normal
+    display: inline-block
+    float: left
+    margin-right: 10px
+    position: relative
+    width: 470px
+    .section-title
+      font-family: "Bree Serif", serif
+      font-weight: 300
+      font-size: 16px
+      padding: 4px
+      background-color: $black-watered
+      position: absolute
+      height: 30px
+      line-height: 1
+      bottom: 34px
+      width: 100%
+      color: #FFF
+    .section-summary
+      line-height: 1
+      font-size: 12px
+      background-color: #FFF
+      padding: 5px
+
+.section-split
+  .section-item:nth-child(4n)
+    margin-right: 0
+  .split:first-child
+    margin-bottom: 10px
+  .section-item
+    .split
+      position: relative
+      .section-title
+        width: 70%
+        right: 0
+      .section-summary
+        position: absolute
+        bottom: 15px
+        right: 0
+        background-color: $grey_4
+        color: $white
+        line-height: 0.8

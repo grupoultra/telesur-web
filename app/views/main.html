@@ -22,7 +22,63 @@
   <ng-include src="'views/partials/videos-section.html'"></ng-include>
 
   <div class="section" ng-repeat="n in [0,1,2,3,4,5]">
+    <div class="header">
+      <div class="pull-left">
+        <h2>Section {{n}}</h2>
+        <a href="#">Ver todas</a>
+      </div>
+      <div class="pull-right">
+        <span>Actualizado a las 02:35pm</span>
+        <span>-</span>
+        <a href="#">Actualizar ahora</a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="section-item" ng-repeat="n in [0,1]">
+      <img src="http://placehold.it/470x215" alt="">
+      <div class="section-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+      <div class="section-summary">
+        Accusamus asperiores corporis earum eligendi enim explicabo id nulla quasi quis vel. At consequatur dolores et
+        magnam, necessitatibus
+      </div>
+    </div>
+  </div>
 
+  <div class="section section-split" ng-repeat="n in [0,1]">
+    <div class="header">
+      <div class="pull-left">
+        <h2>Section splitted {{n}}</h2>
+        <a href="#">Ver todas</a>
+      </div>
+      <div class="pull-right">
+        <span>Actualizado a las 02:35pm</span>
+        <span>-</span>
+        <a href="#">Actualizar ahora</a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="section-item">
+      <div class="split"  ng-repeat="n in [0,1]">
+        <img src="http://placehold.it/470x120" alt="">
+        <div class="section-title">Lorem ipsum dolor sit amet</div>
+        <div class="section-summary">
+          Accusamus asperiores corporis
+        </div>
+      </div>
+    </div>
+
+    <div class="section-item" style="width: auto">
+      <img src="http://placehold.it/295x250" alt="">
+    </div>
+    <div class="section-item">
+      <div class="split"  ng-repeat="n in [0,1]">
+        <img src="http://placehold.it/470x120" alt="">
+        <div class="section-title">Lorem ipsum dolor sit amet </div>
+        <div class="section-summary">
+          Accusamus asperiores corporis
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
