@@ -21,7 +21,7 @@
 <div class="container">
   <ng-include src="'views/partials/videos-section.html'"></ng-include>
 
-  <div class="section" ng-repeat="n in [0,1,2,3,4,5,6,7,8,9]">
+  <div class="section" ng-repeat="n in [0,1,2,3]">
     <div class="header">
       <div class="pull-left">
         <h2>Section {{n}}</h2>
@@ -34,14 +34,53 @@
       </div>
       <div class="clearfix"></div>
     </div>
-    <div class="section-item" ng-repeat="n in [0,1]">
-      <img src="http://placehold.it/470x215" alt="">
-      <div class="section-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
-      <div class="section-summary">
-        Accusamus asperiores corporis earum eligendi enim explicabo id nulla quasi quis vel. At consequatur dolores et
-        magnam, necessitatibus
+    <slick slides-to-show="3" slides-to-scroll="1" arrows="false" variable-width="true" class="videos-section">
+
+      <div class="section-item">
+        <img src="http://placehold.it/470x215" alt="">
+        <div class="section-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+        <div class="section-summary">
+          Accusamus asperiores corporis earum eligendi enim explicabo id nulla quasi quis vel. At consequatur dolores et
+          magnam, necessitatibus
+        </div>
       </div>
-    </div>
+
+      <div class="section-item">
+        <img src="http://placehold.it/470x215" alt="">
+        <div class="section-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+        <div class="section-summary">
+          Accusamus asperiores corporis earum eligendi enim explicabo id nulla quasi quis vel. At consequatur dolores et
+          magnam, necessitatibus
+        </div>
+      </div>
+
+      <div class="section-item advertisement" style="width: auto">
+        <img src="http://placehold.it/295x250" alt="">
+      </div>
+
+      <div class="section-item">
+        <img src="http://placehold.it/470x215" alt="">
+        <div class="section-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+        <div class="section-summary">
+          Accusamus asperiores corporis earum eligendi enim explicabo id nulla quasi quis vel. At consequatur dolores et
+          magnam, necessitatibus
+        </div>
+      </div>
+
+      <div class="section-item advertisement" style="width: auto">
+        <img src="http://placehold.it/295x250" alt="">
+      </div>
+
+      <div class="section-item">
+        <img src="http://placehold.it/470x215" alt="">
+        <div class="section-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+        <div class="section-summary">
+          Accusamus asperiores corporis earum eligendi enim explicabo id nulla quasi quis vel. At consequatur dolores et
+          magnam, necessitatibus
+        </div>
+      </div>
+
+    </slick>
   </div>
 
   <div class="section section-split" ng-repeat="n in [0,1]">
@@ -67,7 +106,7 @@
       </div>
     </div>
 
-    <div class="section-item" style="width: auto">
+    <div class="section-item advertisement">
       <img src="http://placehold.it/295x250" alt="">
     </div>
     <div class="section-item">
