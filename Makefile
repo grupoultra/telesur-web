@@ -8,4 +8,4 @@ release:
 	grunt build
 	git add .
 	git cm -am "Rebuilding"
-	bumpersion minor --commit
+	bumpversion minor --commit
