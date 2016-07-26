@@ -1,0 +1,78 @@
+.explore-domain
+  .news-container, .news-sidebar
+    float: left
+  .news-container
+    margin-right: 10px
+    max-width: 934px
+    width: 934px
+    .news-header
+      position: relative
+      .metadata-container
+        position: absolute
+        width: 45%
+        .category-container, .date-author-container
+          padding: 0px 4px
+          font-size: 12px
+        .category-container
+          background-color: $black-watered
+          color: $white
+        .date-author-container
+          background-color: $grey_4
+          color: $grey_8
+      .image-container
+        border-bottom: 4px solid $telesur_orange
+      .title-container
+        width: 100%
+        background-color: $black-watered
+        position: absolute
+        color: $white
+        bottom: 4px
+        padding: 10px
+        .subtitle
+          font-size: 12px
+        .title
+          font-family: "Bree Serif", serif
+          font-size: 24px
+          line-height: 1
+    .news-content
+      min-height: 105px
+      background-color: $white
+      padding: 5px 5px 5px 10px
+      .visualizations
+        color: $grey_6
+        font-size: 12px
+      .title
+        font-weight: bold
+      .content
+        line-height: 1.2
+        p
+          margin: 0
+          display: inline-block
+          a
+            font-style: italic
+  .news-sidebar
+    width: 320px
+    ul
+      padding: 0
+      li
+        background-color: $white
+        padding: 8px
+        margin-bottom: 4px
+        font-family: "Bree Serif", serif
+        font-size: 16px
+        line-height: 1
+        border-left: 10px solid $grey_5
+        list-style: none
+        a
+          color: $grey_8
+          text-decoration: none
+        &:hover
+          a
+            color: $grey_11
+          border-left: 10px solid $telesur_red
+          background-color: $light_blue_1
+        &.active
+          a
+            color: $grey_11
+          border-left: 10px solid $red
+          background-color: $light_blue_1
