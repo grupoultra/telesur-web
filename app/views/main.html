@@ -13,8 +13,10 @@
 </div>
 
 <div class="container">
-    <!--<ng-include src="'views/partials/explore-domain.html'"></ng-include>-->
-    <ng-include src="'views/partials/vea-domain.html'"></ng-include>
+  <ng-include src="'views/partials/explore-domain.html'" ng-if="isActive('explore')"></ng-include>
+  <ng-include src="'views/partials/vea-domain.html'" ng-if="isActive('vea')"></ng-include>
+  <ng-include src="'views/partials/participe-domain.html'" ng-if="isActive('participe')"></ng-include>
+  <ng-include src="'views/partials/mitelesur-domain.html'" ng-if="isActive('mitelesur')"></ng-include>
 </div>
 
 <div class="container">
