@@ -27,12 +27,12 @@
       </div>
     </section>
 
-    <section class="header-nav">
+    <section class="header-nav" ng-controller="NavCtrl as nav">
       <ul>
-        <li class="active">Explore</li>
-        <li>Vea</li>
-        <li>Participe</li>
-        <li>Mi teleSUR</li>
+        <li ng-class="isActive('explore')" ng-click="changeDomain('explore')">Explore</li>
+        <li ng-class="isActive('vea')"  ng-click="changeDomain('vea')">Vea</li>
+        <li ng-class="isActive('participe')"  ng-click="changeDomain('participe')">Participe</li>
+        <li ng-class="isActive('mitelesur')"  ng-click="changeDomain('mitelesur')">Mi teleSUR</li>
       </ul>
     </section>
 

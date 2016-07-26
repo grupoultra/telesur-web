@@ -8,12 +8,14 @@
  * Controller of the telesurApp
  */
 angular.module('telesurApp')
-  .controller('MainCtrl', ['$scope', 'activeDomain', function ($scope, activeDomain) {
-    $scope.activeDomain = activeDomain.name;
-
+  .controller('NavCtrl', ['$scope', 'activeDomain', function ($scope, activeDomain) {
     $scope.isActive = function(domainName){
       if(activeDomain.name === domainName){
-        return true;
+        return 'active';
       }
+    };
+
+    $scope.changeDomain = function(domainName){
+      activeDomain.change(domainName);
     };
   }]);
