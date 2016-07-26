@@ -8,10 +8,12 @@
  * Controller of the telesurApp
  */
 angular.module('telesurApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl', ['$scope', 'activeDomain', function ($scope, activeDomain) {
+    $scope.activeDomain = activeDomain.name;
+
+    $scope.isActive = function(domainName){
+      if(activeDomain.name === domainName){
+        return true;
+      }
+    };
+  }]);
