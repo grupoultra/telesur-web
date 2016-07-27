@@ -9,4 +9,4 @@ release:
 	git add .
 	git cm -am "Rebuilding"
 	bumpversion minor --commit
-  git subtree push --prefix dist origin gh-pages
+	git subtree push --prefix dist origin gh-pages
