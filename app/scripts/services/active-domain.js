@@ -4,7 +4,7 @@ angular.module('telesurApp')
   .factory('activeDomain', function(){
     var domain = {};
 
-    domain.name = 'explore';
+    domain.name = 'participe';
 
     domain.change = function(domainName){
       domain.name = domainName;
