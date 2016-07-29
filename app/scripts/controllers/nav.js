@@ -15,6 +15,10 @@ angular.module('telesurApp')
       }
     };
 
+    $scope.toggleLiveSignal = function(){
+      activeDomain.toggleLiveSignal();
+    };
+
     $scope.changeDomain = function(domainName){
       activeDomain.change(domainName);
     };
