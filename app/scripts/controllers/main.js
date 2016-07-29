@@ -12,6 +12,9 @@ angular.module('telesurApp')
     $scope.activeDomain = activeDomain.name;
 
 
+    $scope.menu = function(){
+      return activeDomain.menu;
+    };
     $scope.liveSignal = function(){
       return activeDomain.liveSignal;
     };
