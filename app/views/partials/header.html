@@ -1,5 +1,5 @@
 <!-- Add your site or application content here -->
-<header>
+<header ng-controller="NavCtrl as nav">
   <div class="container">
     <section class="header-info">
       <div class="logo text-center">
@@ -27,7 +27,7 @@
       </div>
     </section>
 
-    <section class="header-nav" ng-controller="NavCtrl as nav">
+    <section class="header-nav" >
       <ul>
         <li ng-class="isActive('explore')" ng-click="changeDomain('explore')">Explore</li>
         <li ng-class="isActive('vea')"  ng-click="changeDomain('vea')">Vea</li>
@@ -37,7 +37,7 @@
     </section>
 
     <section class="header-extra text-center">
-      <div class="live-signal">
+      <div class="live-signal" ng-click="toggleLiveSignal()">
         <p>Señal en vivo</p>
         <p>En el aire: Conexión Global</p>
       </div>
@@ -57,3 +57,4 @@
     </section>
   </div>
 </header>
+

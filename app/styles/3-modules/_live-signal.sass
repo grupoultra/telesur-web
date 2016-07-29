@@ -1,0 +1,50 @@
+.live-signal-container
+  transition: all 0.5s ease
+  padding: 5px
+  padding-left: 15%
+  .video-container, .advertisement,   .selector-container
+    display: inline-block
+    float: left
+  .video-container, .advertisement
+    margin-right: 30px
+  .selector-container
+    width: 195px
+    margin-right: 20px
+    ul
+      width: 100%
+      margin: 0%
+      padding: 0%
+      margin-bottom: 10px
+      li
+        list-style: none
+        width: 100%
+        margin-right: 10px
+        border-right: 6px solid $white
+        margin-bottom: 2px
+
+        a
+          display: inline-block
+          width: 100%
+          margin-right: 2px
+          font-family: "Bree Serif", serif
+          font-size: 16px
+          background-color: $grey_2
+          padding-left: 8px
+          padding-right: 8px
+          border-bottom: 2px solid $grey_6
+          color: $grey_8
+
+        &.active, &:active, &:hover
+          border-right: 6px solid $red_1
+          a
+            background-color: $light_blue_1
+            &:active, &:hover
+              color: $grey_10
+              text-decoration: none
+              background-color: $light_blue_1
+
+    p
+      line-height: 1
+      font-size: 12px
+    p, img
+      margin-bottom: 10px
