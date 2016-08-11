@@ -8,7 +8,7 @@
  * Controller of the telesurApp
  */
 angular.module('telesurApp')
-  .controller('MainCtrl', ['$scope', 'activeDomain', function ($scope, activeDomain) {
+  .controller('MainCtrl', ['$scope', 'activeDomain', '$state', function ($scope, activeDomain, $state) {
     $scope.activeDomain = activeDomain.name;
 
     $scope.menu = function(){
