@@ -8,6 +8,5 @@
  * Controller of the telesurApp
  */
 angular.module('telesurApp')
-  .controller('NewsCtrl', ['$scope', 'activeDomain', function ($scope, activeDomain) {
-
+  .controller('NewsCtrl', ['$scope', function ($scope) {
   }]);
