@@ -8,13 +8,10 @@ angular.module('telesurApp')
           element.addClass('fixed');
 
           angular.element( document.querySelector( 'body' ) ).addClass('fixed');
-          // console.log('Scrolled below header.');
         } else {
           element.removeClass('fixed');
 
-
-          angular.element( document.querySelector( 'body' ) ).removeClass('fixed')
-          // console.log('Header is in view.');
+          angular.element( document.querySelector( 'body' ) ).removeClass('fixed');
         }
       });
     };
