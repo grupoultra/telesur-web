@@ -8,14 +8,17 @@
  * Controller of the telesurApp
  */
 angular.module('telesurApp')
-  .controller('NavCtrl', ['$scope', 'activeDomain', function ($scope, activeDomain) {
+  .controller('NavCtrl', ['$scope', 'activeDomain', '$state', function ($scope, activeDomain, $state) {
     $scope.activeDomain = activeDomain.name;
 
-    // $scope.isActive = function(domainName){
-    //   if(activeDomain.name === domainName){
-    //     return 'active';
-    //   }
-    // };
+    $scope.isHomeState = true;
+
+    if($state.current.name === 'root.news'){
+      $scope.isHomeState = false;
+
+      angular.element( document.querySelector( 'header' ) ).addClass('fixed');
+      angular.element( document.querySelector( 'body' ) ).addClass('fixed');
+    }
 
     $scope.toggleMenu = function(){
       activeDomain.toggleMenu();
