@@ -1,6 +1,6 @@
 <!-- Add your site or application content here -->
 <header sticky ng-controller="NavCtrl as nav">
-  <div class="container">
+  <div class="container nav-container">
     <section class="header-info">
       <div class="logo text-center">
         <div class="logo-image text-center">
@@ -63,5 +63,32 @@
       <div class="clearfix"></div>
     </section>
   </div>
+
+  <div class="subnav">
+    <div class="container">
+
+      <div class="breadcrumbs pull-left">
+        <p>Explorando: Página Inicial > Notícias en destaque</p>
+      </div>
+      <div class="menu-principal pull-right" ng-click="toggleMenu()">
+        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        <span>Menú Principal</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="subnav-container" ng-if="menu()">
+      <ng-include src="'views/partials/subfooter.html'"></ng-include>
+      <ng-include src="'views/partials/footer.html'"></ng-include>
+    </div>
+
+    <div class="subnav-container" ng-if="liveSignal()">
+      <ng-include src="'views/partials/live-signal.html'"></ng-include>
+    </div>
+  </div>
+
 </header>
 
