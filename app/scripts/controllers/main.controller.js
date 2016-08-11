@@ -11,7 +11,6 @@ angular.module('telesurApp')
   .controller('MainCtrl', ['$scope', 'activeDomain', function ($scope, activeDomain) {
     $scope.activeDomain = activeDomain.name;
 
-
     $scope.menu = function(){
       return activeDomain.menu;
     };

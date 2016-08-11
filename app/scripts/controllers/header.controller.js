@@ -11,14 +11,13 @@ angular.module('telesurApp')
   .controller('NavCtrl', ['$scope', 'activeDomain', function ($scope, activeDomain) {
     $scope.activeDomain = activeDomain.name;
 
-    $scope.isActive = function(domainName){
-      if(activeDomain.name === domainName){
-        return 'active';
-      }
-    };
+    // $scope.isActive = function(domainName){
+    //   if(activeDomain.name === domainName){
+    //     return 'active';
+    //   }
+    // };
 
     $scope.toggleMenu = function(){
-      console.log("Estoy aqui");
       activeDomain.toggleMenu();
     };
     $scope.toggleLiveSignal = function(){
