@@ -1,27 +1,5 @@
 
-<div class="subnav" ng-controller="NavCtrl as nav">
-  <div class="container">
-
-    <div class="breadcrumbs pull-left">
-      <p>Explorando: Página Inicial > Notícias en destaque</p>
-    </div>
-    <div class="menu-principal pull-right" ng-click="toggleMenu()">
-      <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-      <span>Menú Principal</span>
-    </div>
-    <div class="clearfix"></div>
-  </div>
-</div>
-
 <div class="container">
-  <div class="subnav-container" ng-if="menu()">
-    <ng-include src="'views/partials/subfooter.html'"></ng-include>
-    <ng-include src="'views/partials/footer.html'"></ng-include>
-  </div>
-
-  <div class="subnav-container" ng-if="liveSignal()">
-    <ng-include src="'views/partials/live-signal.html'"></ng-include>
-  </div>
   <ng-include src="'views/partials/explore-domain.html'" ng-if="isActive('explore')"></ng-include>
   <ng-include src="'views/partials/vea-domain.html'" ng-if="isActive('vea')"></ng-include>
   <ng-include src="'views/partials/participe-domain.html'" ng-if="isActive('participe')"></ng-include>

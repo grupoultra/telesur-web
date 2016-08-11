@@ -1,7 +1,6 @@
 header
-  height: 70px
-  .container
-    height: 100%
+  .nav-container
+    height: 70px
     padding: 0
   section
     float: left
@@ -63,6 +62,8 @@ header
     height: 100%
     border-bottom: 4px solid $grey_3
     padding-top: 5px
+    .menu-principal
+      display: none
     .live-signal, .social-search
       float: left
 
@@ -101,3 +102,25 @@ header
             height: 26px
             border-radius: 12px
             padding-bottom: 4px
+  .subnav
+    height: 40px
+    padding: 0
+    margin: 0
+    .container
+      padding-left: 10px
+      height: 100%
+      @extend .grey-bottom-border-6
+
+    .breadcrumbs
+      margin-top: 12px
+    .menu-principal
+      cursor: pointer
+      margin-top: 8px
+    .breadcrumbs
+      p
+        line-height: 1
+        margin: 0
+  .subnav-container
+    border-bottom: 4px solid $grey_6
+    margin-bottom: 10px
+
