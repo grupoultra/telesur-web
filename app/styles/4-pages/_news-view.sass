@@ -1,0 +1,151 @@
+body.news
+  header
+    height: 50px
+    max-height: 50px
+    @extend .fixed
+  footer
+    display: none
+.news-view-container
+  margin: 50px auto
+  height: 100% - 10%
+  background-color: rgba(40, 40, 40, 0.9)
+
+  padding: 10px
+  .news-view
+    .news-container, .news-sidebar
+      float: left
+    .news-container
+      margin-right: 6px
+      max-width: 934px
+      width: 934px
+      .news-header
+        position: relative
+        .metadata-container
+          position: absolute
+          width: 45%
+          .category-container, .date-author-container
+            padding: 0px 4px
+            font-size: 12px
+          .category-container
+            background-color: $black-watered
+            color: $white
+          .date-author-container
+            background-color: $grey_4
+            color: $grey_8
+        .image-container
+          border-bottom: 4px solid $telesur_orange
+        .title-container
+          width: 100%
+          background-color: $black-watered
+          position: absolute
+          color: $white
+          bottom: 4px
+          padding: 10px
+          .subtitle
+            font-size: 12px
+          .title
+            font-family: "Bree Serif", serif
+            font-size: 24px
+            line-height: 1
+      .content
+        margin: 0
+        background-color: $white
+
+        .news-content
+          min-height: 105px
+          padding: 5px 5px 5px 10px
+          .visualizations
+            color: $grey_6
+            font-size: 12px
+          .title
+            font-weight: bold
+          .content
+            line-height: 1.2
+            p
+              margin: 0
+              a
+                font-style: italic
+        .share-new
+          .socials-container
+            padding-bottom: 5px
+            img
+              margin-right: 14px
+            img:last-child
+              margin-right: 0
+        .comments-container
+          margin-top: 10px
+          float: left
+          display: inline-block
+          margin-right: 10px
+          form .form-group
+            margin: 0
+            span
+              font-size: 10px
+              color: $grey_4
+            textarea
+              height: 82px
+              resize: none
+
+      .news-container-footer
+        font-size: 13px
+        p
+          line-height: 1
+          margin: 0
+          padding: 0
+        background-color: $white
+        margin: 0
+        border-top: 4px solid $telesur_red
+        .read-later
+          p>span
+            font-size: 26px
+          p.text
+            font-size: 10px
+            color: $telesur_light_blue
+        .more-articles
+          font-size: 14px
+        .this-article
+          font-size: 12px
+        .prev-next
+          .text
+            font-size: 10px
+          .glyphicon
+            font-size: 20px
+    .news-sidebar
+      background-color: $grey_1
+      width: 320px
+      .close-window
+        height: 30px
+        padding: 4px
+        .glyphicon
+          color: red
+          font-size: 20px
+      .news-selector
+        .selector-header
+          margin: 10px
+          font-family: "Bree Serif", serif
+          font-size: 24px
+
+        ul
+          padding: 0
+          li
+            background-color: $white
+            padding: 8px
+            margin-bottom: 4px
+            font-family: "Bree Serif", serif
+            font-size: 16px
+            line-height: 1
+            border-left: 10px solid $grey_5
+            list-style: none
+            a
+              color: $grey_8
+              text-decoration: none
+            &:hover
+              a
+                color: $grey_11
+              border-left: 10px solid $telesur_red
+              background-color: $light_blue_1
+            &.active
+              a
+                color: $grey_11
+              border-left: 10px solid $red
+              background-color: $light_blue_1
