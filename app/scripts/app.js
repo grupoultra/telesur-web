@@ -29,7 +29,7 @@ angular
         views: {
           'header':{
             templateUrl: 'views/partials/header.html',
-            controller: 'NavCtrl'
+            controller: 'HeaderCtrl'
           },
           'footer':{
             templateUrl: 'views/partials/footer.html',
@@ -52,7 +52,8 @@ angular
         url: '/news/:id',
         views: {
           'container@': {
-            templateUrl: 'views/news.html'
+            templateUrl: 'views/news.html',
+            controller: 'NewsCtrl'
           }
         }
       });
