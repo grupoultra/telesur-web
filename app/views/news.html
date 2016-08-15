@@ -86,7 +86,7 @@
           Relacionados:
         </div>
         <ul>
-          <li class="active" ng-repeat="news in relatedNews">
+          <li class="news.active ? 'active' : ''" ng-repeat="news in relatedNews">
             <a href="{{news.link}}">{{news.title}}</a>
           </li>
         </ul>

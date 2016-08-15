@@ -32,10 +32,10 @@ angular
             controller: 'HeaderCtrl'
           },
           'footer':{
-            templateUrl: 'views/partials/footer.html',
+            templateUrl: 'views/partials/footer.html'
           },
           'subfooter':{
-            templateUrl: 'views/partials/subfooter.html',
+            templateUrl: 'views/partials/subfooter.html'
           }
         }
       })

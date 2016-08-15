@@ -1,8 +1,8 @@
 <div class="container" ng-click="check()">
-  <ng-include src="'views/partials/explore-domain.html'" ng-if="isActive('explore')"></ng-include>
-  <ng-include src="'views/partials/vea-domain.html'" ng-if="isActive('vea')"></ng-include>
-  <ng-include src="'views/partials/participe-domain.html'" ng-if="isActive('participe')"></ng-include>
-  <ng-include src="'views/partials/mitelesur-domain.html'" ng-if="isActive('mitelesur')"></ng-include>
+  <ng-include src="'views/partials/explore-domain.html'"   ng-controller="ExploreDomainCtrl" ng-if="isActive('explore')"></ng-include>
+  <ng-include src="'views/partials/vea-domain.html'"       ng-controller="VeaDomainCtrl" ng-if="isActive('vea')"></ng-include>
+  <ng-include src="'views/partials/participe-domain.html'" ng-controller="ParticipeDomainCtrl" ng-if="isActive('participe')"></ng-include>
+  <ng-include src="'views/partials/mitelesur-domain.html'" ng-controller="MitelesurDomainCtrl" ng-if="isActive('mitelesur')"></ng-include>
 </div>
 
 <div class="container">
