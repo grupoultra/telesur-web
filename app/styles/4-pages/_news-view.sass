@@ -6,12 +6,17 @@ body.news
   header
     height: 50px
     @extend .fixed
+    position: relative
+    z-index: 1
   footer
     display: none
   .subfooter
     position: fixed
     bottom: 0
     width: 1280px
+    height: 50px
+    z-index: 1
+
 
 .news-view-container
   margin: 50px auto
@@ -157,3 +162,28 @@ body.news
                 color: $grey_11
               border-left: 10px solid $red
               background-color: $light_blue_1
+
+
+
+
+.news-view-container
+  display: table
+  width: 1280px
+  border-spacing: 10px
+  border-collapse: separate
+  background: deeppink
+  height: 100%
+  overflow: scroll
+  padding: 50px 0
+  margin: -50px auto
+
+
+.news-container
+  width: 60%
+.news-sidebar
+  width: 30%
+.ColPruebas
+  display: table-cell
+  background: #fff
+
+
