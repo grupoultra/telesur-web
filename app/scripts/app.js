@@ -31,6 +31,9 @@ angular
             templateUrl: 'views/partials/header.html',
             controller: 'HeaderCtrl'
           },
+          'header-advertisement':{
+            templateUrl: 'views/partials/header-advertisement.html'
+          },
           'footer':{
             templateUrl: 'views/partials/footer.html'
           },
