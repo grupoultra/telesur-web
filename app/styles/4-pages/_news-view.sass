@@ -14,13 +14,21 @@ body.news
     width: 1280px
 
 .news-view-container
+  padding: 10px
   margin: 50px auto
-  height: 100% - 10%
   background-color: rgba(40, 40, 40, 0.9)
 
-  padding: 10px
+
   .news-view
     .news-container, .news-sidebar
+      &::-webkit-scrollbar
+        width: 6px
+      &::-webkit-scrollbar-track
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+        border-radius: 10px
+      &::-webkit-scrollbar-thumb
+        border-radius: 10px
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)
       float: left
     .news-container
       margin-right: 6px
@@ -157,3 +165,4 @@ body.news
                 color: $grey_11
               border-left: 10px solid $red
               background-color: $light_blue_1
+
