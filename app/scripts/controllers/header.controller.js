@@ -8,9 +8,25 @@
  * Controller of the telesurApp
  */
 angular.module('telesurApp')
-  .controller('MainCtrl', ['$scope', 'activeDomain', function ($scope, activeDomain) {
+  .controller('HeaderCtrl', ['$scope', 'activeDomain', '$state', function ($scope, activeDomain, $state) {
     $scope.activeDomain = activeDomain.name;
 
+    $scope.isHomeState = true;
+
+    if($state.current.name === 'root.news'){
+      $scope.isHomeState = false;
+    }
+
+    $scope.toggleMenu = function(){
+      activeDomain.toggleMenu();
+    };
+    $scope.toggleLiveSignal = function(){
+      activeDomain.toggleLiveSignal();
+    };
+
+    $scope.changeDomain = function(domainName){
+      activeDomain.change(domainName);
+    };
 
     $scope.menu = function(){
       return activeDomain.menu;
