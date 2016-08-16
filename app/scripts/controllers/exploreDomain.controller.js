@@ -20,7 +20,7 @@ angular.module('telesurApp')
     };
 
     $scope.getNewsLink = function (id){
-      return '/#/news/' + id;
+      return './#/news/' + id;
     };
 
     $scope.news = [
