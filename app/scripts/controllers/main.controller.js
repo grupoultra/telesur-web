@@ -10,6 +10,7 @@
 angular.module('telesurApp')
   .controller('MainCtrl', ['$scope', 'activeDomain', '$state', function ($scope, activeDomain, $state) {
     $scope.activeDomain = activeDomain.name;
+    angular.element( document.querySelector( 'body' ) ).removeClass('news');
 
     $scope.menu = function(){
       return activeDomain.menu;
