@@ -11,6 +11,7 @@ angular.module('telesurApp')
   .controller('NewsCtrl', ['$scope', function ($scope) {
 
     angular.element( document.querySelector( 'body' ) ).addClass('news');
+    angular.element( document.querySelector( '#logical-container' ) ).addClass('height100pc');
 
     $scope.onFocusNews = {
       heroImage: 'http://placehold.it/934x314',
