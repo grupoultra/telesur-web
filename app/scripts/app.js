@@ -54,6 +54,7 @@ angular
       .state('root.news', {
         url: '/news/:id',
         views: {
+          'header-advertisement@': {},
           'container@': {
             templateUrl: 'views/news.html',
             controller: 'NewsCtrl'
