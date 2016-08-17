@@ -36,6 +36,7 @@
           line-height: 1
     .news-content
       min-height: 105px
+      max-height: 105px
       background-color: $white
       padding: 5px 5px 5px 10px
       .visualizations
@@ -47,7 +48,7 @@
         line-height: 1.2
         p
           margin: 0
-          display: inline-block
+          display: inline
           a
             font-style: italic
   .news-sidebar
@@ -55,6 +56,9 @@
     ul
       padding: 0
       li
+        cursor: pointer
+        min-height: 48px
+        max-height: 48px
         background-color: $white
         padding: 8px
         margin-bottom: 4px
