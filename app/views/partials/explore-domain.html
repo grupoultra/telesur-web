@@ -29,8 +29,8 @@
   <div class="news-sidebar">
     <div class="news-selector">
       <ul>
-        <li ng-class="news.active ? 'active' : ''" ng-repeat="news in news">
-          <a ng-click="changeNews(news.id)">{{news.title}}</a>
+        <li ng-click="changeNews(news.id)" ng-class="news.active ? 'active' : ''" ng-repeat="news in topNews">
+          <a >{{news.title}}</a>
         </li>
       </ul>
     </div>
