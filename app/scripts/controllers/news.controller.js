@@ -16,11 +16,5 @@ angular.module('telesurApp')
     $scope.onFocusNews = newsService.onFocusNews;
     $scope.relatedNews = newsService.relatedNews;
     $scope.interestNews = newsService.interestNews;
-
-    $scope.changeNews = function(id){
-      $scope.onFocusNews.active = false;
-      $scope.onFocusNews = $scope.news[id];
-      $scope.news[id].active = true;
-    };
   }]);
 

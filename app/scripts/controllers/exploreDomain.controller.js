@@ -30,6 +30,6 @@ angular.module('telesurApp')
     $scope.changeNews = function(id){
       $scope.onFocusNews.active = false;
       $scope.onFocusNews = $scope.topNews[id];
-      $scope.news[id].active = true;
+      $scope.topNews[id].active = true;
     };
   }]);
