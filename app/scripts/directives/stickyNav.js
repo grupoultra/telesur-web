@@ -15,12 +15,9 @@ angular.module('telesurApp')
           var screenHeight = $window.innerHeight;
           var bottomScreenOffset = this.pageYOffset + screenHeight;
 
-          console.log(bottomScreenOffset, footerOffset);
           if (bottomScreenOffset >= footerOffset){
             angular.element( document.querySelector( '#subfooter' ) ).removeClass('bottomFixed');
           }
-
-
         } else {
           element.removeClass('fixed');
 

@@ -20,6 +20,8 @@ angular.module('telesurApp')
       return activeDomain.liveSignal;
     };
 
+    $scope.videoNews = newsService.videoNews;
+    
     $scope.isActive = function(domainName){
       if(activeDomain.name === domainName){
         return true;

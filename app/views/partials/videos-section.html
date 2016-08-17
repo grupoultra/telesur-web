@@ -1,10 +1,12 @@
 <slick slides-to-show="5" slides-to-scroll="1" class="videos-section">
-  <div class="video-item" ng-repeat="n in [0,1,2,3,4,5,6,7,8,9]">
+  <div class="video-item" ng-repeat="news in videoNews">
     <div class="video-container">
-      <img src="http://placehold.it/242x160" alt="">
+      <img ng-src="{{news.heroImage}}" alt="">
     </div>
     <div class="video-caption">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <a ng-href="{{news.link}}">
+        {{news.title}}
+      </a>
     </div>
   </div>
 </slick>
