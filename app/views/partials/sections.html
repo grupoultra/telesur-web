@@ -17,6 +17,13 @@
 
     <div class="section-item">
       <img src="http://placehold.it/470x215" alt="">
+      <div class="menu-container  text-right" ng-click="menuFocusNews = !menuFocusNews">
+        <span class="glyphicon glyphicon-option-horizontal"></span>
+        <ul  ng-init="menuFocusNews = false"  ng-show="menuFocusNews">
+          <li>menu-element</li>
+          <li>menu-element</li>
+        </ul>
+      </div>
       <div class="section-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
       <div class="section-summary">
         Accusamus asperiores corporis earum eligendi enim explicabo id nulla quasi quis vel. At consequatur dolores et
