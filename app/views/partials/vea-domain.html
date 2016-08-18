@@ -1,5 +1,10 @@
 <div class="domain-container vea-domain container">
   <div class="main-container">
+    <div class="comments" ng-show="commentsBoxOpen" ng-init="false">
+      <div class="close-box" ng-click="commentsBoxOpen = false">
+        <span class="glyphicon glyphicon-remove-circle"></span>
+      </div>
+    </div>
     <div class="left-sidebar">
       <div class="domain-title text-center">Videoteca teleSUR</div>
       <div class="section-selector">
@@ -42,7 +47,7 @@
       </div>
       <div class="video-footer">
         <span>Emitido: Domingo, 12 de junio de 2016, 11:30am - Publicado: Domingo, 12 de junio de 2016, 12:43am</span>
-        <a class="pull-right" href="">18 comentarios</a>
+        <a class="pull-right" ng-click="commentsBoxOpen = true">18 comentarios</a>
       </div>
     </div>
     <div class="clearfix"></div>
