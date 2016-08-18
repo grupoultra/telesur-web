@@ -21,7 +21,7 @@ angular
   ])
   .config(function($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise("/");
+    $urlRouterProvider.otherwise("/explore");
 
     $stateProvider
       .state('root',{
@@ -35,6 +35,10 @@ angular
           'header-advertisement':{
             templateUrl: 'views/partials/header-advertisement.html'
           },
+          'homeNewsContainer': {
+            templateUrl: 'views/partials/home-news-container.html',
+            controller: 'MainCtrl'
+          },
           'footer':{
             templateUrl: 'views/partials/footer.html'
           },
@@ -43,12 +47,39 @@ angular
           }
         }
       })
-      .state('root.home', {
-        url: '/',
+      .state('root.explore', {
+        url: '/explore',
         views: {
-          'container@': {
-            templateUrl: 'views/main.html',
-            controller: 'MainCtrl'
+          'domainContainer@': {
+            templateUrl: 'views/partials/explore-domain.html',
+            controller: 'ExploreDomainCtrl'
+          }
+        }
+      })
+      .state('root.vea', {
+        url: '/vea',
+        views: {
+          'domainContainer@': {
+            templateUrl: 'views/partials/vea-domain.html',
+            controller: 'VeaDomainCtrl'
+          }
+        }
+      })
+      .state('root.participe', {
+        url: '/participe',
+        views: {
+          'domainContainer@': {
+            templateUrl: 'views/partials/participe-domain.html',
+            controller: 'ParticipeDomainCtrl'
+          }
+        }
+      })
+      .state('root.mitelesur', {
+        url: '/mitelesur',
+        views: {
+          'domainContainer@': {
+            templateUrl: 'views/partials/mitelesur-domain.html',
+            controller: 'MitelesurDomainCtrl'
           }
         }
       })
@@ -56,6 +87,7 @@ angular
         url: '/news/:id',
         views: {
           'header-advertisement@': {},
+          'homeNewsContainer@': {},
           'container@': {
             templateUrl: 'views/news.html',
             controller: 'NewsCtrl'
