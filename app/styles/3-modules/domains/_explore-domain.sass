@@ -10,6 +10,7 @@
       .metadata-container
         position: absolute
         width: 45%
+        z-index: 1
         .category-container, .date-author-container
           padding: 0px 4px
           font-size: 12px
@@ -20,7 +21,34 @@
           background-color: $grey_4
           color: $grey_8
       .image-container
+        position: relative
         border-bottom: 4px solid $telesur_orange
+        .menu-container
+          line-height: 1
+          padding: 5px
+          color: $white
+          display: inline
+          position: absolute
+          right: 0
+          top: 0
+          ul
+            border-radius: 5px
+            background-color: $black-watered
+            margin: 0
+            padding: 0
+            li
+              list-style: none
+              padding: 5px
+              &:hover
+                pointer: cursor
+                border-radius: 5px
+                background-color: $black
+          span
+            font-size: 22px
+          &:hover
+            span
+              color: $grey_8
+
       .title-container
         width: 100%
         background-color: $black-watered
