@@ -9,13 +9,16 @@
  */
 angular.module('telesurApp')
   .controller('HeaderCtrl', ['$scope', 'activeDomain', '$state', function ($scope, activeDomain, $state) {
-    $scope.activeDomain = activeDomain.name;
+    var checkActiveDomain = function(){
+      $scope.menuSections = [
+        { name: 'Explore', domain: 'explore', active: ($state.current.name === 'root.explore') ? 'active' : '' },
+        { name: 'Vea', domain: 'vea', active: ($state.current.name === 'root.vea') ? 'active' : '' },
+        { name: 'Participe', domain: 'participe', active: ($state.current.name === 'root.participe') ? 'active' : '' },
+        { name: 'Mi Telesur', domain: 'mitelesur', active: ($state.current.name === 'root.mitelesur') ? 'active' : '' }
+      ];
+    };
 
-    $scope.isHomeState = true;
-
-    if($state.current.name === 'root.news'){
-      $scope.isHomeState = false;
-    }
+    checkActiveDomain();
 
     $scope.toggleMenu = function(){
       activeDomain.toggleMenu();
@@ -25,7 +28,10 @@ angular.module('telesurApp')
     };
 
     $scope.changeDomain = function(domainName){
-      activeDomain.change(domainName);
+      $state.go('root.'+domainName)
+        .then(function(){
+          checkActiveDomain();
+        });
     };
 
     $scope.menu = function(){

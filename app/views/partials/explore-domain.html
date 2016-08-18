@@ -1,4 +1,4 @@
-<div class="domain-container explore-domain">
+<div class="domain-container explore-domain container">
   <div class="news-container">
     <div class="news-header">
       <div class="metadata-container">
@@ -8,6 +8,13 @@
 
       <div class="image-container">
         <img src="{{onFocusNews.heroImage}}" alt="">
+        <div class="menu-container  text-right" ng-click="menuFocusNews = !menuFocusNews">
+          <span class="glyphicon glyphicon-option-horizontal"></span>
+          <ul  ng-init="menuFocusNews = false"  ng-show="menuFocusNews">
+            <li>menu-element</li>
+            <li>menu-element</li>
+          </ul>
+        </div>
       </div>
       <div class="title-container">
         <div class="subtitle">{{onFocusNews.subTitle}}</div>
