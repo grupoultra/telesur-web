@@ -3,7 +3,7 @@
     <section class="header-info">
       <div class="logo text-center">
         <div class="logo-image text-center">
-          <a ui-sref="root.home">
+          <a ui-sref="root.explore">
             <img src="http://placehold.it/44x44" alt="">
           </a>
         </div>
@@ -30,10 +30,9 @@
 
     <section class="header-nav" >
       <ul>
-        <li ng-class="isActive('explore')" ng-click="changeDomain('explore')">Explore</li>
-        <li ng-class="isActive('vea')"  ng-click="changeDomain('vea')">Vea</li>
-        <li ng-class="isActive('participe')"  ng-click="changeDomain('participe')">Participe</li>
-        <li ng-class="isActive('mitelesur')"  ng-click="changeDomain('mitelesur')">Mi teleSUR</li>
+        <li class="{{section.active}}" ng-click="changeDomain(section.domain)" ng-repeat="section in menuSections">
+          {{ section. name }}
+        </li>
       </ul>
     </section>
 
