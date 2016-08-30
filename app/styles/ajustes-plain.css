@@ -1,0 +1,7 @@
+.videos-section .slick-prev{
+    z-index: 2;
+}
+
+#menu-container, #live-signal-container{
+    display: none;
+}
