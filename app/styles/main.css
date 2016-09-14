@@ -366,15 +366,13 @@ header .header-info {
     header .header-info .logo .language-switch a {
       font-size: 12px;
       color: #bb123b; }
-  header .header-info .time-weather {
-    width: 120px; }
-    header .header-info .time-weather .time {
-      font-size: 14px; }
-      header .header-info .time-weather .time p {
-        margin: 0; }
-    header .header-info .time-weather #weather i {
-      font-size: 22px;
-      margin-right: 8px; }
+  header .header-info .time-weather .time {
+    font-size: 14px; }
+    header .header-info .time-weather .time p {
+      margin: 0; }
+  header .header-info .time-weather #weather i {
+    font-size: 22px;
+    margin-right: 8px; }
   header .header-info .session-info img {
     padding-bottom: 5px; }
   header .header-info .session-info p {
