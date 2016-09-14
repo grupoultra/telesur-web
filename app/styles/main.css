@@ -218,7 +218,7 @@ th {
 .slick-next {
   right: 15px; }
 
-.vcenter, header .header-info .logo, header .header-info .time-weather, header .header-info .session-info, header .header-info .time-weather .weather span {
+.vcenter, header .header-info .logo, header .header-info .time-weather, header .header-info .session-info, header .header-info .time-weather #weather i {
   display: inline-block;
   vertical-align: middle;
   float: none; }
@@ -366,15 +366,15 @@ header .header-info {
     header .header-info .logo .language-switch a {
       font-size: 12px;
       color: #bb123b; }
-  header .header-info .time-weather .time {
-    font-size: 14px; }
-    header .header-info .time-weather .time p {
-      margin: 0; }
-  header .header-info .time-weather .weather {
-    font-size: 12px; }
-    header .header-info .time-weather .weather .glyphicon {
-      margin-right: 8px;
-      font-size: 22px; }
+  header .header-info .time-weather {
+    width: 120px; }
+    header .header-info .time-weather .time {
+      font-size: 14px; }
+      header .header-info .time-weather .time p {
+        margin: 0; }
+    header .header-info .time-weather #weather i {
+      font-size: 22px;
+      margin-right: 8px; }
   header .header-info .session-info img {
     padding-bottom: 5px; }
   header .header-info .session-info p {
@@ -429,7 +429,7 @@ header .header-extra {
     padding-bottom: 5px; }
     header .header-extra .social-search .socials-container a {
       text-decoration: none;
-      margin-right: 7px; }
+      margin-right: 6px; }
     header .header-extra .social-search .socials-container img:last-child {
       margin-right: 0; }
   header .header-extra .social-search .search form .form-group {
@@ -463,6 +463,129 @@ header .subnav {
 header .subnav-container {
   border-bottom: 4px solid #a0a0a0;
   margin-bottom: 10px; }
+
+@font-face {
+  font-family: "weather";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot?#iefix") format("embedded-opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.ttf") format("truetype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+#weather {
+  margin: 0px auto;
+  text-align: center;
+  text-transform: uppercase; }
+  #weather i {
+    font-family: weather;
+    font-size: 150px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    text-transform: none; }
+
+.icon-0:before {
+  content: ":"; }
+
+.icon-1:before {
+  content: "p"; }
+
+.icon-2:before {
+  content: "S"; }
+
+.icon-3:before {
+  content: "Q"; }
+
+.icon-4:before {
+  content: "S"; }
+
+.icon-5:before, .icon-6:before, .icon-7:before, .icon-8:before {
+  content: "W"; }
+
+.icon-9:before {
+  content: "I"; }
+
+.icon-10:before {
+  content: "W"; }
+
+.icon-11:before, .icon-12:before, .icon-13:before, .icon-14:before {
+  content: "I"; }
+
+.icon-15:before {
+  content: "W"; }
+
+.icon-16:before {
+  content: "I"; }
+
+.icon-17:before {
+  content: "W"; }
+
+.icon-18:before {
+  content: "U"; }
+
+.icon-19:before, .icon-20:before, .icon-21:before, .icon-22:before, .icon-23:before {
+  content: "Z"; }
+
+.icon-24:before, .icon-25:before {
+  content: "E"; }
+
+.icon-26:before {
+  content: "3"; }
+
+.icon-27:before {
+  content: "a"; }
+
+.icon-28:before {
+  content: "A"; }
+
+.icon-29:before {
+  content: "a"; }
+
+.icon-30:before {
+  content: "A"; }
+
+.icon-31:before {
+  content: "6"; }
+
+.icon-32:before {
+  content: "1"; }
+
+.icon-33:before {
+  content: "6"; }
+
+.icon-34:before {
+  content: "1"; }
+
+.icon-35:before {
+  content: "W"; }
+
+.icon-36:before {
+  content: "1"; }
+
+.icon-37:before, .icon-38:before, .icon-39:before {
+  content: "S"; }
+
+.icon-40:before {
+  content: "M"; }
+
+.icon-41:before {
+  content: "W"; }
+
+.icon-42:before {
+  content: "I"; }
+
+.icon-43:before {
+  content: "W"; }
+
+.icon-44:before {
+  content: "a"; }
+
+.icon-45:before {
+  content: "S"; }
+
+.icon-46:before {
+  content: "U"; }
+
+.icon-47:before {
+  content: "S"; }
 
 header.fixed, body.news header {
   position: fixed;
@@ -688,13 +811,13 @@ header.fixed, body.news header {
     .section .section-item .section-title {
       font-family: "Bree Serif", serif;
       font-weight: 300;
-      font-size: 16px;
+      font-size: 15px;
       padding: 4px;
       background-color: rgba(40, 40, 40, 0.6);
       position: absolute;
       height: 30px;
       line-height: 1;
-      bottom: 34px;
+      bottom: 50px;
       width: 100%;
       color: #FFF; }
       .section .section-item .section-title a {
@@ -703,7 +826,9 @@ header.fixed, body.news header {
       line-height: 1;
       font-size: 12px;
       background-color: #FFF;
-      padding: 5px; }
+      padding: 5px;
+      min-height: 50px;
+      height: 50px; }
     .section .section-item.advertisement {
       width: auto; }
 
@@ -717,8 +842,10 @@ header.fixed, body.news header {
     width: 70%;
     right: 0; }
   .section-split .section-item .split .section-summary {
+    height: auto;
+    min-height: auto;
     position: absolute;
-    bottom: 15px;
+    bottom: 30px;
     right: 0;
     background-color: #cccccc;
     color: #fff;
@@ -838,6 +965,8 @@ footer {
       .explore-domain .news-container .news-header .metadata-container .category-container {
         background-color: rgba(40, 40, 40, 0.6);
         color: #fff; }
+        .explore-domain .news-container .news-header .metadata-container .category-container a {
+          color: white; }
       .explore-domain .news-container .news-header .metadata-container .date-author-container {
         background-color: #cccccc;
         color: #717171; }
