@@ -459,6 +459,7 @@ header .subnav {
     line-height: 1;
     margin: 0; }
 header .subnav-container {
+  display: none;
   border-bottom: 4px solid #a0a0a0;
   margin-bottom: 10px; }
 
@@ -645,7 +646,7 @@ header.fixed, body.news header {
         display: none; }
       header.fixed .header-extra .social-search .search form .form-group, body.news header .header-extra .social-search .search form .form-group {
         margin: 0; }
-  header.fixed .subnav, body.news header .subnav {
+  header.fixed .subnav, body.news header .subnav, header.fixed .breaking-news-stripe, body.news header .breaking-news-stripe {
     display: none; }
 
 .vertical-advertising {
@@ -813,7 +814,6 @@ header.fixed, body.news header {
       padding: 4px;
       background-color: rgba(40, 40, 40, 0.6);
       position: absolute;
-      height: 30px;
       line-height: 1;
       bottom: 50px;
       width: 100%;
@@ -829,6 +829,114 @@ header.fixed, body.news header {
       height: 50px; }
     .section .section-item.advertisement {
       width: auto; }
+
+.section-split .section-item:nth-child(4n) {
+  margin-right: 0; }
+.section-split .split:first-child {
+  margin-bottom: 10px; }
+.section-split .section-item .split {
+  position: relative; }
+  .section-split .section-item .split .section-title {
+    width: 70%;
+    right: 0; }
+  .section-split .section-item .split .section-summary {
+    height: auto;
+    min-height: auto;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    background-color: #cccccc;
+    color: #fff;
+    line-height: 0.8; }
+    .section-split .section-item .split .section-summary a {
+      color: white;
+      font-weight: bold; }
+
+.section-full {
+  padding: 10px 0;
+  min-height: 300px;
+  white-space: nowrap; }
+  .section-full:nth-child(2n) {
+    background-color: #FFF; }
+  .section-full:nth-child(2n+1) {
+    background-color: #dddddd; }
+  .section-full .header {
+    margin-bottom: 5px; }
+    .section-full .header .pull-left h2 {
+      color: #717171;
+      display: inline-block;
+      margin: 0 15px 0 0;
+      padding: 0;
+      font-family: "Fira Sans", sans-serif;
+      font-size: 22px; }
+    .section-full .header .pull-right {
+      font-size: 12px; }
+  .section-full .filter {
+    border-bottom: 2px solid #a0a0a0;
+    margin-bottom: 15px;
+    padding-bottom: 10px; }
+    .section-full .filter form .form-group {
+      margin-bottom: 0; }
+    .section-full .filter form a.advanced-search {
+      display: inline-block;
+      font-size: 12px;
+      color: #717171;
+      text-decoration: underline;
+      margin-top: 5px; }
+  .section-full .section-item {
+    margin-bottom: 10px;
+    white-space: normal;
+    display: inline-block;
+    float: left;
+    position: relative; }
+    .section-full .section-item .menu-container {
+      line-height: 1;
+      padding: 5px;
+      color: #fff;
+      display: inline;
+      position: absolute;
+      right: 0;
+      top: 0; }
+      .section-full .section-item .menu-container ul {
+        border-radius: 5px;
+        background-color: rgba(40, 40, 40, 0.6);
+        margin: 0;
+        padding: 0; }
+        .section-full .section-item .menu-container ul li {
+          list-style: none;
+          padding: 5px; }
+          .section-full .section-item .menu-container ul li:hover {
+            pointer: cursor;
+            border-radius: 5px;
+            background-color: #111; }
+      .section-full .section-item .menu-container span {
+        font-size: 22px; }
+      .section-full .section-item .menu-container:hover span {
+        color: #717171; }
+    .section-full .section-item .section-title {
+      font-family: "Bree Serif", serif;
+      font-weight: 300;
+      font-size: 15px;
+      padding: 4px;
+      background-color: rgba(40, 40, 40, 0.6);
+      position: absolute;
+      display: block;
+      height: 30px;
+      line-height: 1;
+      bottom: 50px;
+      width: 100%;
+      color: #FFF; }
+      .section-full .section-item .section-title a {
+        color: #fff; }
+    .section-full .section-item .section-summary {
+      line-height: 1;
+      font-size: 12px;
+      background-color: #FFF;
+      padding: 5px;
+      min-height: 50px;
+      height: 50px; }
+    .section-full .section-item.advertisement img {
+      margin: 0 auto; }
 
 .section-split .section-item:nth-child(4n) {
   margin-right: 0; }
@@ -1379,6 +1487,25 @@ footer {
       padding-bottom: 10px;
       width: 100%;
       border-bottom: 4px solid #bb123b; }
+
+.breaking-news-stripe .container {
+  display: relative;
+  padding: 0 10px;
+  border-bottom: 4px solid #a0a0a0;
+  background-color: #bb123b;
+  color: white; }
+  .breaking-news-stripe .container h1, .breaking-news-stripe .container a, .breaking-news-stripe .container span {
+    color: white; }
+  .breaking-news-stripe .container h1 {
+    letter-spacing: 1px;
+    font-family: "Bree Serif", serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 10px; }
+  .breaking-news-stripe .container a {
+    margin: 0.7em 0;
+    text-decoration: underline; }
 
 html, body {
   height: 100%;
