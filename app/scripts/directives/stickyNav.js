@@ -10,7 +10,6 @@ angular.module('telesurApp')
           angular.element( document.querySelector( 'body' ) ).addClass('fixed');
           angular.element( document.querySelector( '#subfooter' ) ).addClass('bottomFixed');
 
-          var footerHeight = angular.element( document.querySelector( 'footer' ) ).prop('offsetHeight');
           var footerOffset = angular.element( document.querySelector( 'footer' ) ).offset().top;
           var screenHeight = $window.innerHeight;
           var bottomScreenOffset = this.pageYOffset + screenHeight;

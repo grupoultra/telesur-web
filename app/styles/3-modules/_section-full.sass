@@ -1,0 +1,112 @@
+.section-full
+  &:nth-child(2n)
+    background-color: #FFF
+  &:nth-child(2n+1)
+    background-color: $grey_3
+  padding: 10px 0
+  min-height: 300px
+  white-space: nowrap
+  .header
+    margin-bottom: 5px
+    .pull-left
+      h2
+        color: $grey_8
+        display: inline-block
+        margin: 0 15px 0 0
+        padding: 0
+        font-family: "Fira Sans", sans-serif
+        font-size: 22px
+    .pull-right
+      font-size: 12px
+  .filter
+    border-bottom: 2px solid #a0a0a0
+    margin-bottom: 15px
+    padding-bottom: 10px
+    form
+      .form-group
+        margin-bottom: 0
+      a.advanced-search
+        display: inline-block
+        font-size: 12px
+        color: $grey_8
+        text-decoration: underline
+        margin-top: 5px
+  .section-item
+    //&:nth-child(3n+1)
+    //  margin-right: 0px
+    margin-bottom: 10px
+    white-space: normal
+    display: inline-block
+    float: left
+    //margin-right: 10px
+    position: relative
+    .menu-container
+      line-height: 1
+      padding: 5px
+      color: $white
+      display: inline
+      position: absolute
+      right: 0
+      top: 0
+      ul
+        border-radius: 5px
+        background-color: $black-watered
+        margin: 0
+        padding: 0
+        li
+          list-style: none
+          padding: 5px
+          &:hover
+            pointer: cursor
+            border-radius: 5px
+            background-color: $black
+      span
+        font-size: 22px
+      &:hover
+        span
+          color: $grey_8
+    .section-title
+      font-family: "Bree Serif", serif
+      font-weight: 300
+      font-size: 15px
+      padding: 4px
+      background-color: $black-watered
+      position: absolute
+      display: block
+      height: 30px
+      line-height: 1
+      bottom: 50px
+      width: 100%
+      color: #FFF
+      a
+        color: $white
+    .section-summary
+      line-height: 1
+      font-size: 12px
+      background-color: #FFF
+      padding: 5px
+      min-height: 50px
+      height: 50px
+    &.advertisement
+      img
+        margin: 0 auto
+.section-split
+  .section-item:nth-child(4n)
+    margin-right: 0
+  .split:first-child
+    margin-bottom: 10px
+  .section-item
+    .split
+      position: relative
+      .section-title
+        width: 70%
+        right: 0
+      .section-summary
+        height: auto
+        min-height: auto
+        position: absolute
+        bottom: 30px
+        right: 0
+        background-color: $grey_4
+        color: $white
+        line-height: 0.8

@@ -3,3 +3,6 @@
 /.sass-cache
 /bower_components
 .idea
+.sass-cache/
+app/.DS_Store
+.DS_Store

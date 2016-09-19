@@ -54,20 +54,23 @@
     .section-title
       font-family: "Bree Serif", serif
       font-weight: 300
-      font-size: 16px
+      font-size: 15px
       padding: 4px
       background-color: $black-watered
       position: absolute
-      height: 30px
       line-height: 1
-      bottom: 34px
+      bottom: 50px
       width: 100%
       color: #FFF
+      a
+        color: $white
     .section-summary
       line-height: 1
       font-size: 12px
       background-color: #FFF
       padding: 5px
+      min-height: 50px
+      height: 50px
     &.advertisement
       width: auto
 .section-split
@@ -82,9 +85,15 @@
         width: 70%
         right: 0
       .section-summary
+        height: auto
+        min-height: auto
         position: absolute
-        bottom: 15px
+        bottom: 30px
         right: 0
         background-color: $grey_4
         color: $white
         line-height: 0.8
+        a
+          color: white
+          font-weight: bold
+
